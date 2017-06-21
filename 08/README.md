@@ -20,3 +20,4 @@ Amazon Web APIを利用して検索結果が表示される。
 1. Amazon web APIのAWSAccessKeyId,AWSSecretKey,AssociateTagを取得する
 2. requesturl.phpの10,13,24行目にそれぞれAccessKeyId,AWSSecretKey,AssociateTagを入力して保存する
 3. 準備OK
+
