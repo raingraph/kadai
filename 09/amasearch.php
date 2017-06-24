@@ -9,6 +9,7 @@
   <style>div{padding: 10px;font-size:16px;}</style>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./ckeditor/ckeditor.js"></script>
 </head>
 <body>
 
@@ -71,8 +72,14 @@ require_once(__DIR__ . '/requesturl.php');  // Amazon request URL作成
         <input type="radio" name="evaluate" value="★★★★">★★★★
         <input type="radio" name="evaluate" value="★★★★★">★★★★★
         <br>
-     <label>コメント：<br>
-       <textArea name="comment" rows="4" cols="40"></textArea></label><br>
+<!--      <label>コメント：<br>
+       <textArea name="comment" rows="4" cols="40"></textArea></label><br> -->
+       <label>コメント：<br>
+       <textArea name="comment" id="editor1" rows="4" cols="40"></textArea>
+      <script>
+        CKEDITOR.replace('editor1');
+      </script>
+       </label><br> 
   <input type="submit" value="ブックマークする！"><br><br>
 </form>
 </div>

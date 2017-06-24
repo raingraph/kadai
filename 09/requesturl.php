@@ -7,10 +7,10 @@ $search_bname = $_GET['search_bname'];
 
 // AmazonのProduct Advertising APIの呼び出し
 // AWS Access Key IDの入力
-$aws_access_key_id = "XXXXXXXXXXXXXXXXXXXX"; // AWSのアクセスキーを入力してください
+$aws_access_key_id = "XXXXXXXXXXXXXXXXXXXXXXXXX"; // AWSのアクセスキーを入力してください
 
 // AWS Secret Keyの入力
-$aws_secret_key = "XXXXXXXXXXXXXXXXXXXXXXXX"; // AWSのシークレットキーを入力してください
+$aws_secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXX"; // AWSのシークレットキーを入力してください
 
 // The region you are interested in
 $endpoint = "webservices.amazon.co.jp";
@@ -21,7 +21,7 @@ $params = array(
     "Service" => "AWSECommerceService",
     "Operation" => "ItemSearch",
     "AWSAccessKeyId" => $aws_access_key_id, // アクセスキーを入力してください
-    "AssociateTag" => "XXXXXXXXXXXXX",         // IDを入力してください
+    "AssociateTag" => "XXXXXXXXXXXX",         // IDを入力してください
     "SearchIndex" => "Books",
     "Keywords" => $search_bname,                // 本の名前(検索キーワードから連携)
     "ResponseGroup" => "Images,Medium"
