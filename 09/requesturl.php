@@ -7,7 +7,7 @@ $search_bname = $_GET['search_bname'];
 
 // AmazonのProduct Advertising APIの呼び出し
 // AWS Access Key IDの入力
-$aws_access_key_id = "XXXXXXXXXXXXXXXXXXXXXXXXX"; // AWSのアクセスキーを入力してください
+$aws_access_key_id = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"; // AWSのアクセスキーを入力してください
 
 // AWS Secret Keyの入力
 $aws_secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXX"; // AWSのシークレットキーを入力してください
